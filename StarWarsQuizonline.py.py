@@ -8,6 +8,7 @@ st.title("My Quiz")
 print("🌌 Welcome young Padawan to the STAR WARS QUIZ! 🚀")
 print("You will get 20 random questions out of 200. May the Force be with you!\n")
 input("Press Enter to start the quiz")
+
 # Each question is stored as: ("Question", ["list of correct answers"])
 questions = [
     ("What is the name of Luke Skywalker’s father?", ["anakin", "anakin skywalker"]),
@@ -245,4 +246,5 @@ print ("Check out my other projects!")
 print ("may the Force be with you! ✨")
 
 input("Druk op Enter om het programma af te sluiten...")
+
 
