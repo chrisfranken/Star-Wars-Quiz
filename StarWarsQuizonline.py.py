@@ -1,13 +1,14 @@
 import streamlit as st
-
-print = st.write
 import random
 
 st.title("My Quiz")
 
-print("🌌 Welcome young Padawan to the STAR WARS QUIZ! 🚀")
-print("You will get 20 random questions out of 200. May the Force be with you!\n")
-input("Press Enter to start the quiz")
+st.write("🌌 Welcome young Padawan to the STAR WARS QUIZ! 🚀")
+st.write("You will get 20 random questions out of 200. May the Force be with you!\n")
+
+# Startknop
+if st.button("Press to start the game"):
+    st.write("Game started!")
 
 # Each question is stored as: ("Question", ["list of correct answers"])
 questions = [
@@ -246,5 +247,6 @@ print ("Check out my other projects!")
 print ("may the Force be with you! ✨")
 
 input("Druk op Enter om het programma af te sluiten...")
+
 
 
