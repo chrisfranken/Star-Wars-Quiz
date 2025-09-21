@@ -221,12 +221,13 @@ score = 0
 
 for q, answers in selected_questions:
     user_answer = st.text_input(q + " ").lower().strip()
-    if user_answer in answers:
-        st.write("✅ Correct!")
-        score += 1
-    else:
-        st.write(f"❌ Wrong! The correct answer is one of: {', '.join(answers)}")
-    st.write()
+    if user_answer:
+            if user_answer.lower().strip() in answers:
+                st.success("✅ Correct!")
+                score += 1
+            else:
+                st.error(f"❌ Wrong! Correct answer: {answers[0].title()}")
+
 
 # Final result
 st.write("🎉 Quiz finished! 🎉")
@@ -240,12 +241,13 @@ elif score >= 4:
 else:
     st.write("😅 Oops... more training with Yoda you need!")
 
-st.caption ("Developed by Chris 🤖")
+st.caption ("Developed by Chris")
 st.caption ("Version 1.0.0 beta")
-st.caption ("new update coming soon... 🚀")
-st.write ("may the Force be with you! ✨")
+st.caption ("new update coming soon...")
+st.write ("may the Force be with you!")
 
 st.button("Druk op Enter om het programma af te sluiten...")
+
 
 
 
