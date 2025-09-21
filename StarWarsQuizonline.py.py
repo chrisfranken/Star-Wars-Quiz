@@ -219,14 +219,17 @@ if st.button("Press to start the game"):
 selected_questions = random.sample(questions, 20)
 score = 0
 
-for q, answers in selected_questions:
-    user_answer = st.text_input(q + " ").lower().strip()
-    if user_answer:
-            if user_answer.lower().strip() in answers:
-                st.success("✅ Correct!")
-                score += 1
-            else:
-                st.error(f"❌ Wrong! Correct answer: {answers[0].title()}")
+for i, (q, answers) in enumerate(selected_questions):
+    user_input = st.text_input(f"Question {i+1}: {q}", key=f"q{i}")  # unieke key
+
+    if user_input:  # alleen checken als er input is
+        user_answer = user_input.lower().strip()
+        if user_answer in answers:
+            st.success("✅ Correct!")
+            score += 1
+        else:
+            st.error(f"❌ Wrong! Correct answer: {answers[0].title()}")
+
 
 
 # Final result
@@ -247,6 +250,7 @@ st.caption ("new update coming soon...")
 st.write ("may the Force be with you!")
 
 st.button("Druk op Enter om het programma af te sluiten...")
+
 
 
 
