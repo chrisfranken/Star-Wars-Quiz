@@ -6,10 +6,6 @@ st.title("My Quiz")
 st.write("🌌 Welcome young Padawan to the STAR WARS QUIZ! 🚀")
 st.write("You will get 20 random questions out of 200. May the Force be with you!\n")
 
-# Startknop
-if st.button("Press to start the game"):
-    st.write("✅ Game started!")
-
     # Each question is stored as: ("Question", ["list of correct answers"])
     questions = [
     ("What is the name of Luke Skywalker’s father?", ["anakin", "anakin skywalker"]),
@@ -215,6 +211,10 @@ if st.button("Press to start the game"):
     ("Who is the Wookiee that helps Han Solo?", ["chewbacca", "chewie"]),
 ]
 
+# Startknop
+if st.button("Press to start the game"):
+    st.write("✅ Game started!")
+    
 # Pick 20 random questions each game
 selected_questions = random.sample(questions, 20)
 score = 0
@@ -246,6 +246,7 @@ st.caption ("new update coming soon... 🚀")
 st.write ("may the Force be with you! ✨")
 
 st.button("Druk op Enter om het programma af te sluiten...")
+
 
 
 
