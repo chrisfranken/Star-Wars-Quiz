@@ -7,7 +7,7 @@ st.write("🌌 Welcome young Padawan to the STAR WARS QUIZ! 🚀")
 st.write("You will get 20 random questions out of 200. May the Force be with you!\n")
 
     # Each question is stored as: ("Question", ["list of correct answers"])
-    questions = [
+questions = [
     ("What is the name of Luke Skywalker’s father?", ["anakin", "anakin skywalker"]),
     ("What is the other name of Darth Vader?", ["anakin", "anakin skywalker", "vader"]),
     ("What is the name of Princess Leia’s brother?", ["luke", "luke skywalker"]),
@@ -247,6 +247,7 @@ st.caption ("new update coming soon...")
 st.write ("may the Force be with you!")
 
 st.button("Druk op Enter om het programma af te sluiten...")
+
 
 
 
