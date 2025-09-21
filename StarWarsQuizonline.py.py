@@ -222,31 +222,31 @@ score = 0
 for q, answers in selected_questions:
     user_answer = input(q + " ").lower().strip()
     if user_answer in answers:
-        print("✅ Correct!")
+        st.write("✅ Correct!")
         score += 1
     else:
-        print(f"❌ Wrong! The correct answer is one of: {', '.join(answers)}")
-    print()
+        st.write(f"❌ Wrong! The correct answer is one of: {', '.join(answers)}")
+    st.write()
 
 # Final result
-print("🎉 Quiz finished! 🎉")
-print(f"You got {score} out of {len(selected_questions)} right!")
+st.write("🎉 Quiz finished! 🎉")
+st.write(f"You got {score} out of {len(selected_questions)} right!")
 if score == len(selected_questions):
-    print("🏆 Amazing! You are a true Jedi Master!")
+    st.write("🏆 Amazing! You are a true Jedi Master!")
 elif score >= 7:
-    print("🌟 Great job, young Padawan! The Force is strong with you!")
+    st.write("🌟 Great job, young Padawan! The Force is strong with you!")
 elif score >= 4:
-    print("👍 Not bad! Keep training with the Force!")
+    st.write("👍 Not bad! Keep training with the Force!")
 else:
-    print("😅 Oops... more training with Yoda you need!")
+    st.write("😅 Oops... more training with Yoda you need!")
 
-print ("Developed by Chris 🤖")
-print ("Version 1.0.0 beta")
-print ("new update coming soon... 🚀")
-print ("Check out my other projects!")
-print ("may the Force be with you! ✨")
+st.caption ("Developed by Chris 🤖")
+st.caption ("Version 1.0.0 beta")
+st.caption ("new update coming soon... 🚀")
+st.write ("may the Force be with you! ✨")
 
-input("Druk op Enter om het programma af te sluiten...")
+st.button("Druk op Enter om het programma af te sluiten...")
+
 
 
 
