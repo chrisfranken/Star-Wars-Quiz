@@ -12,10 +12,10 @@ if st.button("Press to start the game"):
 
     # Each question is stored as: ("Question", ["list of correct answers"])
     questions = [
-        ("What is the name of Luke Skywalker’s father?", ["anakin", "anakin skywalker"]),
-        ("What is the other name of Darth Vader?", ["anakin", "anakin skywalker", "vader"]),
-        ("What is the name of Princess Leia’s brother?", ["luke", "luke skywalker"]),
-        ("Who trained Luke to be a Jedi?", ["yoda", "obi-wan", "obi wan", "obi-wan kenobi"]),
+    ("What is the name of Luke Skywalker’s father?", ["anakin", "anakin skywalker"]),
+    ("What is the other name of Darth Vader?", ["anakin", "anakin skywalker", "vader"]),
+    ("What is the name of Princess Leia’s brother?", ["luke", "luke skywalker"]),
+    ("Who trained Luke to be a Jedi?", ["yoda", "obi-wan", "obi wan", "obi-wan kenobi"]),
     ("What color is Yoda’s lightsaber?", ["green"]),
     ("What is Yoda’s homeworld?", ["unknown"]),
     ("Who is Han Solo’s best friend?", ["chewbacca", "chewie"]),
@@ -220,7 +220,7 @@ selected_questions = random.sample(questions, 20)
 score = 0
 
 for q, answers in selected_questions:
-    user_answer = input(q + " ").lower().strip()
+    user_answer = st.text_input(q + " ").lower().strip()
     if user_answer in answers:
         st.write("✅ Correct!")
         score += 1
@@ -246,6 +246,7 @@ st.caption ("new update coming soon... 🚀")
 st.write ("may the Force be with you! ✨")
 
 st.button("Druk op Enter om het programma af te sluiten...")
+
 
 
 
