@@ -8,14 +8,14 @@ st.write("You will get 20 random questions out of 200. May the Force be with you
 
 # Startknop
 if st.button("Press to start the game"):
-    st.write("Game started!")
+    st.write("✅ Game started!")
 
-# Each question is stored as: ("Question", ["list of correct answers"])
-questions = [
-    ("What is the name of Luke Skywalker’s father?", ["anakin", "anakin skywalker"]),
-    ("What is the other name of Darth Vader?", ["anakin", "anakin skywalker", "vader"]),
-    ("What is the name of Princess Leia’s brother?", ["luke", "luke skywalker"]),
-    ("Who trained Luke to be a Jedi?", ["yoda", "obi-wan", "obi wan", "obi-wan kenobi"]),
+    # Each question is stored as: ("Question", ["list of correct answers"])
+    questions = [
+        ("What is the name of Luke Skywalker’s father?", ["anakin", "anakin skywalker"]),
+        ("What is the other name of Darth Vader?", ["anakin", "anakin skywalker", "vader"]),
+        ("What is the name of Princess Leia’s brother?", ["luke", "luke skywalker"]),
+        ("Who trained Luke to be a Jedi?", ["yoda", "obi-wan", "obi wan", "obi-wan kenobi"]),
     ("What color is Yoda’s lightsaber?", ["green"]),
     ("What is Yoda’s homeworld?", ["unknown"]),
     ("Who is Han Solo’s best friend?", ["chewbacca", "chewie"]),
@@ -246,6 +246,7 @@ st.caption ("new update coming soon... 🚀")
 st.write ("may the Force be with you! ✨")
 
 st.button("Druk op Enter om het programma af te sluiten...")
+
 
 
 
